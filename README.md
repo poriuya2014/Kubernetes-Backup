@@ -69,6 +69,16 @@ Once logged into the MinIO Web UI:
 
  Now the velero-bucket is created and ready for use.
 
+You can even do this by command:
+# Using mc (MinIO client)
+
+```bash
+mc alias set local http://192.168.140.27:9000 puria 1q2w3e
+mc mb local/velero
+```
+
+
+
 3.3.Obtain an Access Token for Authentication
 Instead of using static credentials (minioadmin and minioadmin), you can generate a secure Access Token for Velero.
 
